@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: terraform-provider-rhcs-rhtap
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads-stage/dev-release-team-tenant/terraform-provider-rhcs-rhtap/terraform-provider-rhcs-rhtap@sha256:d27cfcc90973b65bbdb093d6f37ab550a302a3b40298b22feb07ca0b6ae0c453
+        name: container-image
+        resources: {}
+status: {}
